@@ -1,7 +1,10 @@
 package com.vitaheng.demo;
 
+import com.vitaheng.utils.C3P0Utils;
+import com.vitaheng.utils.DruidUtils;
 import com.vitaheng.utils.JDBCUtils;
 
+import javax.sql.DataSource;
 import java.sql.*;
 
 public class jdbcUtil_demo {
@@ -11,7 +14,9 @@ public class jdbcUtil_demo {
         ResultSet rs = null;
 
         try {
-            cn = JDBCUtils.getConnection();
+//            cn = JDBCUtils.getConnection();
+            cn = DruidUtils.getConnection();
+//            cn = C3P0Utils.getConnection();
             st = cn.createStatement();
             String sql = "select * from users";
             rs = st.executeQuery(sql);
@@ -25,7 +30,9 @@ public class jdbcUtil_demo {
         }catch (Exception e) {
             e.printStackTrace();
         }finally {
-            JDBCUtils.release(cn,st,rs);
+//            JDBCUtils.release(cn,st,rs);
+            DruidUtils.release(cn,st,rs);
+//            C3P0Utils.release(cn,st,rs);
         }
     }
 }
