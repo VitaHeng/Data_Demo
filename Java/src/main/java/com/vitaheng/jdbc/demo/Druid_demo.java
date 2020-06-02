@@ -1,6 +1,6 @@
-package com.vitaheng.demo;
+package com.vitaheng.jdbc.demo;
 
-import com.vitaheng.utils.DruidUtils;
+import com.vitaheng.jdbc.utils.DruidUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

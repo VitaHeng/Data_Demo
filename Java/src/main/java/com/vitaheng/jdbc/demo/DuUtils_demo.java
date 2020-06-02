@@ -1,8 +1,8 @@
-package com.vitaheng.demo;
+package com.vitaheng.jdbc.demo;
 
-import com.vitaheng.domain.Users;
-import com.vitaheng.utils.C3P0Utils;
-import com.vitaheng.utils.DruidUtils;
+import com.vitaheng.jdbc.domain.Users;
+import com.vitaheng.jdbc.utils.C3P0Utils;
+import com.vitaheng.jdbc.utils.DruidUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
 import org.junit.Test;

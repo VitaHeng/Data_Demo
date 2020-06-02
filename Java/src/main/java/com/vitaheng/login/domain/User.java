@@ -1,17 +1,19 @@
-package com.vitaheng.domain;
+package com.vitaheng.login.domain;
 
-public class Users {
+public class User {
     private int uid;
     private String username;
     private String password;
+    private String nickname;
 
-    public Users() {
+    public User() {
     }
 
-    public Users(int uid, String username, String password) {
+    public User(int uid, String username, String password, String nickname) {
         this.uid = uid;
         this.username = username;
         this.password = password;
+        this.nickname = nickname;
     }
 
     public int getUid() {
@@ -38,12 +40,22 @@ public class Users {
         this.password = password;
     }
 
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
     @Override
     public String toString() {
-        return "Users{" +
+        return "User{" +
                 "uid=" + uid +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
                 '}';
     }
 }
+

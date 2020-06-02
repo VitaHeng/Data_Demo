@@ -1,10 +1,7 @@
-package com.vitaheng.demo;
+package com.vitaheng.jdbc.demo;
 
-import com.vitaheng.utils.C3P0Utils;
-import com.vitaheng.utils.DruidUtils;
-import com.vitaheng.utils.JDBCUtils;
+import com.vitaheng.jdbc.utils.DruidUtils;
 
-import javax.sql.DataSource;
 import java.sql.*;
 
 public class jdbcUtil_demo {

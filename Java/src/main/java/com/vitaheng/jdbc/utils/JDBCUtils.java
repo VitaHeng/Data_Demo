@@ -1,4 +1,4 @@
-package com.vitaheng.utils;
+package com.vitaheng.jdbc.utils;
 
 import java.io.FileReader;
 import java.io.IOException;
