@@ -11,7 +11,7 @@
     <title>登陆页面</title>
 </head>
 <body>
-<form method="get" action="/loginServlet">
+<form method="get" action="/LoginServlet">
     <table>
         <tr>
             <td colspan="2">

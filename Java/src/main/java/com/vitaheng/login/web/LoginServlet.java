@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet{
                 req.getRequestDispatcher("/login.jsp").forward(req,resp);
             }else {
                 req.getSession().setAttribute("loginUser",loginUser);
-                resp.sendRedirect("/login/index.jsp");
+                resp.sendRedirect("/index.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();
