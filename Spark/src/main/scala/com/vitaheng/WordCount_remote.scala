@@ -4,6 +4,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object WordCount_remote {
 
+  /*远程调试报错,未找到原因*/
   def main(args: Array[String]){
     val conf = new SparkConf()
       .setMaster("spark://hadoop102:7077")
