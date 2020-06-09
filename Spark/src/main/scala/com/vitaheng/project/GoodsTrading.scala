@@ -1,4 +1,4 @@
-package com.vitaheng
+package com.vitaheng.project
 
 import org.apache.spark.sql.SparkSession
 
