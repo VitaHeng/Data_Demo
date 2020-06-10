@@ -1,7 +1,7 @@
-package com.vitaheng.login.web;
+package com.vitaheng.basic.login.web;
 
-import com.vitaheng.login.domain.User;
-import com.vitaheng.login.service.UserService;
+import com.vitaheng.basic.login.domain.User;
+import com.vitaheng.basic.login.service.UserService;
 import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.ServletException;

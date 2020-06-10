@@ -1,4 +1,4 @@
-package com.vitaheng.jdbc.utils;
+package com.vitaheng.basic.jdbc.utils;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 

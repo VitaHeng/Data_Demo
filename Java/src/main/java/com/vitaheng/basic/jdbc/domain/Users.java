@@ -1,4 +1,4 @@
-package com.vitaheng.jdbc.domain;
+package com.vitaheng.basic.jdbc.domain;
 
 public class Users {
     private int uid;

@@ -1,4 +1,4 @@
-package com.vitaheng.login.domain;
+package com.vitaheng.basic.login.domain;
 
 public class User {
     private int uid;

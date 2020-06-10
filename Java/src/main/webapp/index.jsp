@@ -1,4 +1,4 @@
-<%@ page import="com.vitaheng.login.domain.User" %><%--
+<%@ page import="com.vitaheng.basic.login.domain.User" %><%--
   Created by IntelliJ IDEA.
   User: Liu
   Date: 2018/9/10

@@ -1,7 +1,7 @@
-package com.vitaheng.login.dao;
+package com.vitaheng.basic.login.dao;
 
-import com.vitaheng.jdbc.utils.C3P0Utils;
-import com.vitaheng.login.domain.User;
+import com.vitaheng.basic.jdbc.utils.C3P0Utils;
+import com.vitaheng.basic.login.domain.User;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 

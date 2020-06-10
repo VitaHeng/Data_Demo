@@ -1,4 +1,4 @@
-package com.vitaheng.jdbc.demo;
+package com.vitaheng.basic.jdbc.demo;
 
 import java.sql.*;
 

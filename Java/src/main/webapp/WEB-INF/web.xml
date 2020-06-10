@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.vitaheng.login.web.LoginServlet</servlet-class>
+    <servlet-class>com.vitaheng.basic.login.web.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>

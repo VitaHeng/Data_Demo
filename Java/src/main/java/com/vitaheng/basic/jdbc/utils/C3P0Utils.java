@@ -1,4 +1,4 @@
-package com.vitaheng.jdbc.utils;
+package com.vitaheng.basic.jdbc.utils;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
