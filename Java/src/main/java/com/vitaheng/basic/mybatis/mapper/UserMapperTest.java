@@ -23,7 +23,7 @@ public class UserMapperTest {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
-        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        userMapper = sqlSession.getMapper(UserMapper.class);
 
     }
 

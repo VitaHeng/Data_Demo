@@ -4,6 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties resource="jdbc.properties"/>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
     <typeAliases>
         <package name="com.vitaheng.basic.mybatis.domain"/>
     </typeAliases>
@@ -19,6 +22,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.vitaheng.basic.mybatis.mapper"/>
+        <mapper resource="mybatis/mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
