@@ -1,5 +1,6 @@
 package com.vitaheng.basic.mybatis.mapper;
 
+
 import com.vitaheng.basic.mybatis.domain.User;
 
 import java.util.List;
