@@ -1,9 +1,9 @@
-package com.vitaheng.staticrecommend
+package com.vitaheng
 
 import java.text.SimpleDateFormat
 import java.util.Date
 
-import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
+import org.apache.spark.sql.{Dataset, SparkSession}
 
 object StaticRecommend extends App {
 

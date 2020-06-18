@@ -1,4 +1,4 @@
-package com.vitaheng.dataloader
+package com.vitaheng
 
 import java.net.InetAddress
 
@@ -64,13 +64,13 @@ object DataLoader {
 
   def main(args: Array[String]): Unit = {
 
-    val DATAFILE_MOVIES = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\movies.csv"
-    val DATAFILE_RATINGS = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\ratings.csv"
-    val DATAFILE_TAGS = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\tags.csv"
+    val DATAFILE_MOVIES = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\data\\movies.csv"
+    val DATAFILE_RATINGS = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\data\\ratings.csv"
+    val DATAFILE_TAGS = "E:\\Demo\\1\\Data_Demo\\SparkProject\\MovieRecommend\\src\\main\\resources\\data\\tags.csv"
 
     val spark = SparkSession.builder().master("local[4]").appName("dataloader").getOrCreate()
-    import spark.implicits._
     import org.apache.spark.sql.functions._
+    import spark.implicits._
 
     val moviesRDD = spark.sparkContext.textFile(DATAFILE_MOVIES)
     val ratingsRDD = spark.sparkContext.textFile(DATAFILE_RATINGS)
