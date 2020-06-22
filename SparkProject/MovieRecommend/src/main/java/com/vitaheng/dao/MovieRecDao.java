@@ -1,13 +1,11 @@
 package com.vitaheng.dao;
 
-import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Sorts;
 import com.vitaheng.pojo.Recommend;
 import org.bson.Document;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;

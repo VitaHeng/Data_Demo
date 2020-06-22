@@ -12,8 +12,9 @@
                         http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
 ">
 
+    <!--spark框架报错,暂时不深究这一块-->
     <context:component-scan base-package="com.vitaheng.service"/>
-    <context:property-placeholder location="classpath:properties/recommend.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:properties/recommend.properties"/>
     <mongo:mongo-client id="mongoClient" host="${mongo.host}" port="${mongo.port}"/>
     <mongo:db-factory id="mongoDbFactory" dbname="${mongo.dbname}" mongo-ref="mongoClient"/>
     <mongo:repositories base-package="com.vitaheng.dao"/>

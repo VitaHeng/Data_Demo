@@ -22,9 +22,9 @@ object StaticRecommend extends App {
 
   ratings.createOrReplaceTempView("ratings")
 
-  rateMore(spark)
-  rateMoreRecently(spark)
-  genresHot(spark)(movies)
+//  rateMore(spark)
+//  rateMoreRecently(spark)
+//  genresHot(spark)(movies)
 
   def rateMore(spark: SparkSession)(implicit mongoConfig: MongoConfig) = {
     val ratingMoreDF = spark.sql(
