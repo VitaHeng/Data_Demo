@@ -30,6 +30,8 @@
         <solrj.version>4.10.3</solrj.version>
         <ik.version>2012_u6</ik.version>
         <c3p0.version>0.9.1.2</c3p0.version>
+        <jackson.version>2.8.6</jackson.version>
+        <pagehelper.version>4.0.0</pagehelper.version>
     </properties>
 
     <dependencyManagement>
@@ -256,6 +258,16 @@
                 <groupId>c3p0</groupId>
                 <artifactId>c3p0</artifactId>
                 <version>${c3p0.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
