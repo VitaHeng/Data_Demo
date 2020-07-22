@@ -29,6 +29,7 @@
         <fastjson.version>1.2.51</fastjson.version>
         <logback.version>1.0.7</logback.version>
         <flume-ng-core.version>1.7.0</flume-ng-core.version>
+        <hive.version>1.2.1</hive.version>
     </properties>
 
     <dependencyManagement>
@@ -203,6 +204,11 @@
                 <groupId>org.apache.flume</groupId>
                 <artifactId>flume-ng-core</artifactId>
                 <version>${flume-ng-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.hive</groupId>
+                <artifactId>hive-exec</artifactId>
+                <version>${hive.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

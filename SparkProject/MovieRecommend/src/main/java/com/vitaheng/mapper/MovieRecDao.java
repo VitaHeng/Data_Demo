@@ -1,4 +1,4 @@
-package com.vitaheng.dao;
+package com.vitaheng.mapper;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;

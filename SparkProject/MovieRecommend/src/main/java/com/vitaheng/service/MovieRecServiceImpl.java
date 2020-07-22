@@ -1,6 +1,6 @@
 package com.vitaheng.service;
 
-import com.vitaheng.dao.MovieRecDao;
+import com.vitaheng.mapper.MovieRecDao;
 import com.vitaheng.pojo.Recommend;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -17,13 +17,13 @@
     <context:property-placeholder location="classpath:properties/recommend.properties"/>
     <mongo:mongo-client id="mongoClient" host="${mongo.host}" port="${mongo.port}"/>
     <mongo:db-factory id="mongoDbFactory" dbname="${mongo.dbname}" mongo-ref="mongoClient"/>
-    <mongo:repositories base-package="com.vitaheng.dao"/>
+    <mongo:repositories base-package="com.vitaheng.mapper"/>
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
     </bean>
 
-    <bean id="movieRecDao" class="com.vitaheng.dao.MovieRecDao">
+    <bean id="movieRecDao" class="com.vitaheng.mapper.MovieRecDao">
         <property name="mongoTemplate" ref="mongoTemplate"/>
     </bean>
 
