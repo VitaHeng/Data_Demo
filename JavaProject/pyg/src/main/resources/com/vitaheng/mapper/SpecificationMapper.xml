@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vitaheng.mapper.SpecificationMapper">
+    <select id="querySpecificationById" parameterType="Long" resultType="Specification">
+        select * from tb_Specification where id=#{id}
+    </select>
+    <select id="querySpecificationList" resultType="Specification">
+        select * from tb_Specification
+    </select>
+    <insert id="insertSpecification" parameterType="Specification">
+        insert into tb_Specification values(#{id},#{specName})
+    </insert>
+    <update id="updateSpecification" parameterType="Specification">
+        update tb_Specification set spec_name=#{specName} where id=#{id}
+    </update>
+    <delete id="deleteById" parameterType="Long">
+        delete from tb_Specification where id=#{id}
+    </delete>
+</mapper>

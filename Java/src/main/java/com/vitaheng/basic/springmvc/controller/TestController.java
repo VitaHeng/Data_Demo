@@ -3,10 +3,7 @@ package com.vitaheng.basic.springmvc.controller;
 import com.vitaheng.basic.mybatis.domain.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -51,4 +48,12 @@ public class TestController {
             System.out.println(user.getUserName());
         }
     }
+
+    @RequestMapping("path_variable/{id}")
+    public ModelAndView path_variable(@PathVariable("id")Long id) {
+        ModelAndView path_vari = new ModelAndView("path_vari");
+        return path_vari.addObject("pathVari","占位符映射:"+id);
+    }
+
+
 }
