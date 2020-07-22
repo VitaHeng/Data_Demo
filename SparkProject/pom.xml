@@ -29,7 +29,7 @@
         <fastjson.version>1.2.51</fastjson.version>
         <logback.version>1.0.7</logback.version>
         <flume-ng-core.version>1.7.0</flume-ng-core.version>
-        <hive.version>1.2.1</hive.version>
+        <hive.version>2.3.4</hive.version>
     </properties>
 
     <dependencyManagement>
