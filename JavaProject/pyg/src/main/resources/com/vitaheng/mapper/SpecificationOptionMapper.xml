@@ -3,10 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.vitaheng.mapper.SpecificationOptionMapper">
-    <select id="querySpecificationOptionById" parameterType="Long" resultType="SpecificationOption">
+    <resultMap id="specOptionResultMap" type="SpecificationOption">
+        <id property="id" column="id"/>
+        <result property="optionName" column="option_name"/>
+        <result property="specId" column="spec_id"/>
+    </resultMap>
+    <select id="querySpecificationOptionById" parameterType="Long" resultMap="specOptionResultMap">
         select * from tb_specification_option where id=#{id}
     </select>
-    <select id="querySpecificationOptionList" resultType="SpecificationOption">
+    <select id="queryListBySpecId" parameterType="Long" resultMap="specOptionResultMap">
+        select * from tb_specification_option where spec_id=#{specId}
+    </select>
+    <select id="querySpecificationOptionList" resultMap="specOptionResultMap">
         select * from tb_specification_option
     </select>
     <insert id="insertSpecificationOption" parameterType="SpecificationOption">
