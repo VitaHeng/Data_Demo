@@ -12,4 +12,5 @@ public interface SpecificationOptionMapper {
     public void insertSpecificationOption(SpecificationOption specificationOption);
     public void updateSpecificationOption(SpecificationOption specificationOption);
     public void deleteById(Long id);
+    public void deleteBySpecId(Long id);
 }

@@ -43,7 +43,7 @@ public class SpecificationServiceImpl implements SpecificationService {
     @Override
     public void updateSpecification(CombinSpecification combinSpecification) {
         specificationMapper.updateSpecification(combinSpecification.getSpecification());
-        specificationOptionMapper.deleteById(combinSpecification.getSpecification().getId());
+        specificationOptionMapper.deleteBySpecId(combinSpecification.getSpecification().getId());
         List<SpecificationOption> specificationOptions = combinSpecification.getSpecificationOptions();
         for (SpecificationOption specificationOption : specificationOptions) {
             specificationOption.setSpecId(combinSpecification.getSpecification().getId());

@@ -37,7 +37,7 @@ public class SpecificationController {
     }
 
     @RequestMapping("updateSpec")
-    public PygResult updateSpecification(CombinSpecification combinSpecification) {
+    public PygResult updateSpecification(@RequestBody CombinSpecification combinSpecification) {
         try {
             specificationService.updateSpecification(combinSpecification);
             return new PygResult(true,"更新成功");

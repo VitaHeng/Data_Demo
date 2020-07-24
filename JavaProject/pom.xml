@@ -32,6 +32,7 @@
         <c3p0.version>0.9.1.2</c3p0.version>
         <jackson.version>2.8.6</jackson.version>
         <pagehelper.version>4.0.0</pagehelper.version>
+        <jstl.version>1.2</jstl.version>
     </properties>
 
     <dependencyManagement>
@@ -268,6 +269,11 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jstl</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

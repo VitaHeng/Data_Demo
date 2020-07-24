@@ -26,4 +26,7 @@
     <delete id="deleteById" parameterType="Long">
         delete from tb_specification_option where id=#{id}
     </delete>
+    <delete id="deleteBySpecId" parameterType="Long">
+        delete from tb_specification_option where spec_id=#{specId}
+    </delete>
 </mapper>
