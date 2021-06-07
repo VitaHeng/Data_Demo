@@ -27,7 +27,7 @@
         <mongodb-driver>3.5.0</mongodb-driver>
         <junit.version>4.12</junit.version>
         <fastjson.version>1.2.51</fastjson.version>
-        <logback.version>1.0.7</logback.version>
+        <logback.version>1.2.0</logback.version>
         <flume-ng-core.version>1.7.0</flume-ng-core.version>
         <hive.version>1.2.1</hive.version>
     </properties>
