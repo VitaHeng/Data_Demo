@@ -15,7 +15,7 @@
         <elasticsearch-spark.version>5.6.2</elasticsearch-spark.version>
         <elasticsearch.version>5.6.2</elasticsearch.version>
         <casbah.version>3.1.1</casbah.version>
-        <log4j.version>2.8.2</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
         <spring.version>4.2.4.RELEASE</spring.version>
         <mybatis.version>3.2.8</mybatis.version>
         <mybatis.spring.version>1.2.2</mybatis.spring.version>
