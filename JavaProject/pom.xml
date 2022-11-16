@@ -30,7 +30,7 @@
         <solrj.version>4.10.3</solrj.version>
         <ik.version>2012_u6</ik.version>
         <c3p0.version>0.9.1.2</c3p0.version>
-        <jackson.version>2.8.6</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
         <pagehelper.version>4.0.0</pagehelper.version>
         <jstl.version>1.2</jstl.version>
     </properties>
